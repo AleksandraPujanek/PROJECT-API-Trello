@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "1b360968-4469-4608-a084-54bbbfece8e0",
+		"name": "P.1.Trello - board name tests [QueryParams]",
+		"description": "Env: TRELLO Prod",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create a board",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const json = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.collectionVariables.set(\"colBoardId\", json.id);\r",
+							"const boardName = pm.iterationData.get('itBoardName');\r",
+							"\r",
+							"pm.test (\"Should return correct board name: \" + boardName, function () {\r",
+							"    pm.expect(json.name).to.eql(boardName);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"//pm.collectionVariables.set('colBoardName', \"REST API board 3\");\r",
+							"// console.log(\"PRE-script\");\r",
+							"// console.log(pm.collectionVariables.get('colBoardName'));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/boards/?name={{itBoardName}}&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "{{itBoardName}}"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete existing board",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/boards/{{colBoardId}}?key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"boards",
+						"{{colBoardId}}"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "boardId",
+			"value": ""
+		},
+		{
+			"key": "boardName",
+			"value": ""
+		},
+		{
+			"key": "colBoardName",
+			"value": ""
+		},
+		{
+			"key": "colBoardId",
+			"value": ""
+		}
+	]
+}
