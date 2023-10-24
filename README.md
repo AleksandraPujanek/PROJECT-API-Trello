@@ -1,5 +1,5 @@
-# :file_folder: PROJECT:API Trello
-Verification of REST API in Trello / board name (available characters and length) and E2E scenario.
+# :file_folder: PROJECT: API Trello
+Verification of REST API in Trello / create a new board with correct name (available characters and length) and E2E scenario.
 
 [REST API Trello - documentation](https://developer.atlassian.com/cloud/trello/rest/api-group-actions/#api-group-actions)
 
