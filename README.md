@@ -39,6 +39,9 @@ Verification of REST API in Trello / create a new board with correct name (avail
 - [P.1.Trello - board name tests - QueryParams - positive_report.html](https://drive.google.com/file/d/1oEbkyK-6I6if8X3sDYxLJqaAL8M5vXLx/view?usp=drive_link)
 - [P.1.Trello - board name tests - QueryParams - negative_report.html](https://drive.google.com/file/d/12z0n4Lf93NclgvUoMHuOA4G6Kb9KFqtw/view?usp=drive_link)
 
+**Defect report:**
+- [P.1.Trello - board name tests - QueryParams - defect report.xlsx](https://docs.google.com/spreadsheets/d/1398HPZYEmQ9QQNxpGLPKTvnsaAFhvIun/edit?usp=drive_link&ouid=105556741090660469965&rtpof=true&sd=true)
+
 
 ## Collection #2 - P.2.Trello - board name tests [json body]
 
@@ -53,3 +56,31 @@ Verification of REST API in Trello / create a new board with correct name (avail
 **Reports:**
 - [P.2.Trello - board name tests - json body - positive_report.html](https://drive.google.com/file/d/1GnymfUo6T1sToO1w94Y38Ksdh9a7udHf/view?usp=drive_link)
 - [P.2.Trello - board name tests - json body - negative_report.html](https://drive.google.com/file/d/1MNvIgZwbVMCnh9EHeW-FGRqJO3Qw4Bm-/view?usp=drive_link)
+
+## Collection #3 - P.3.Trello - board name length tests [json body]
+
+**Test Data:**
+- [P.3.TrelloBoardNameLengthPositive.json](https://drive.google.com/file/d/1C_lfp5nLYZfOfwkjet11W1rdElSq0wb1/view?usp=drive_link)
+- [P.3.TrelloBoardNameLengthNegative.json](https://drive.google.com/file/d/1WS3gZmo4_hDfVvBmy1gWxvgWRG5296UZ/view?usp=drive_link)
+
+**Postman Collections:**
+- [P.3.Trello - board name length tests - json body - positive.postman_collection.json](https://drive.google.com/file/d/1b3fVL7fN4FFMDxmcpW3vT5J-IBumYlZN/view?usp=drive_link)
+- [P.3.Trello - board name length tests - json body - negative.postman_collection.json](https://drive.google.com/file/d/1sYbQcYkfzMiw2vHuIe0vkgIF-5wYRap4/view?usp=drive_link)
+
+**Reports:**
+- [P.3.Trello - board name length tests - json body - positive_report.html](https://drive.google.com/file/d/1tu7Ku9yGaOncyFz6EwQ0Xs2fch9ijbXm/view?usp=drive_link)
+- [P.3.Trello - board name length tests - json body - negative_report.html](https://drive.google.com/file/d/1RQl8llWePthWaT_Z8sp16oyOjfKHpL8v/view?usp=drive_link)
+
+## Collection #4 - P.4.Trello - board name length tests [QueryParams]
+
+**Test Data:**
+- [P.4.TrelloBoardNameLength.json](https://drive.google.com/file/d/1mojGpljVZPb9qDzlwg3YOmzxdYuGLKc0/view?usp=drive_link)
+
+**Postman Collections:**
+- [P.4.Trello - board name length tests - QueryParams - positive.postman_collection.json](https://drive.google.com/file/d/1vUdeTJY99LldDihnElxxrKBjAmJ4_N5K/view?usp=drive_link)
+
+**Reports:**
+- [P.4.Trello - board name length tests - QueryParams - positive_report.html](https://drive.google.com/file/d/14K90HbwKOvs5JElCQ5_we0rztc5ZZ5qk/view?usp=drive_link)
+
+**Defect report:**
+- [P.4.Trello - board name length tests - QueryParams - defect report.xlsx](https://docs.google.com/spreadsheets/d/1nsYtfU4DmQzDb1kyzSFH3jafBvj79WTB/edit?usp=drive_link&ouid=105556741090660469965&rtpof=true&sd=true)
