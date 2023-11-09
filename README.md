@@ -1,7 +1,17 @@
 # :file_folder: PROJECT: API Trello - board name validation
 Verification of REST API in Trello / create a new board with correct name (available characters and length):
+
+Project scope:
+
+- find, read and analyse REST API documentation for Trello,
+- select area for testing activities: board name while creating a new board:
 - validation of available characters including special characters, Chinese and German characters,
-- validation of the name length.
+- validation of the name length,
+- create requests and test scripts in Postman,
+- apply good practisies: clean up after testing activities,
+- create Postman's collections, environment and test data (data load),
+- run Postman collections with environment and data load from Newman,
+- create Test Report
 
 **Summary:** [Trello - Test Report](https://drive.google.com/file/d/1WEboOLbMr4NWALqAs4NdX8bfnKXTYbLh/view?usp=drive_link)
 
