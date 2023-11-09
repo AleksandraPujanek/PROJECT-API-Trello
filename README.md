@@ -1,5 +1,5 @@
 # :file_folder: PROJECT: API Trello - board name validation
-Verification of REST API in Trello / create a new board with correct name (available characters and length) and E2E scenario.
+Verification of REST API in Trello / create a new board with correct name (available characters and length).
 
 **Summary:** [Trello - Test Report](https://drive.google.com/file/d/1WEboOLbMr4NWALqAs4NdX8bfnKXTYbLh/view?usp=drive_link)
 
