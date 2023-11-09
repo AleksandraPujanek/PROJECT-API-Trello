@@ -23,7 +23,7 @@ Verification of REST API in Trello / create a new board with correct name (avail
     - Min length: 1
     - Max length: 16384
 - key=APIKey
-- token=APIToken'
+- token=APIToken
 
 ## Collection #1 - P.1.Trello - board name tests [QueryParams]
 
